@@ -1,4 +1,23 @@
 /*
+    Fonts
+    ----
+    @font-face declarations
+*/
+
+@font-face{
+    font-family: "Inter Web";
+    font-weight: 400;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: "Inter Web";
+    font-weight: 700;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
+
+/*
     Elements: Page
     ---
     Default markup for page level elements
@@ -7,8 +26,9 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-    color: #111;
+    font-family: droid-serif, serif;
+    /*font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif;*/
+    color: #5C6366;
     padding: 48px 24px 24px;
 }
 
@@ -25,7 +45,7 @@ body {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #008cff;
     color: white;
     text-shadow: none;
 }
@@ -46,9 +66,15 @@ img {
     ---
     Default markup for typographic elements
 */
+h1,
+h2,
+h3 {
+    color: #17181A;
+}
 
 h1 {
-    font-family: "Times New Roman", serif;
+    /*font-family: "Times New Roman", serif;*/
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
     font-weight: normal;
     line-height: 40px;
@@ -123,13 +149,13 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: rgb(77, 152, 236);
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: rgb(77, 152, 236);
 }
 
 a:hover,
